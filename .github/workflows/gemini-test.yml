@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Récupérer le projet
+      - name: Recuperer le projet
         uses: actions/checkout@v4
 
       - name: Installer Python
@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Installer les dépendances
+      - name: Installer les dependances
         run: pip install -r requirements.txt
 
       - name: Tester Gemini
